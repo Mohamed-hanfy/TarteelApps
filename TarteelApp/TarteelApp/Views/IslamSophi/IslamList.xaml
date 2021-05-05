@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TarteelApp.Views.IslamSophi.IslamList"
+             BackgroundImageSource="backg.png"
+             Shell.NavBarHasShadow="False" 
+             Shell.NavBarIsVisible="False"
+             >
+    <StackLayout>
+        <StackLayout HorizontalOptions="Center" Margin="0,40,0,0" >
+            <Label Text="اسلام صبحي" TextColor="Black" FontSize="25" FontFamily="{StaticResource CairoA}" Margin="0,0,40,0" />
+            <Image Source="Line.png"/>
+        </StackLayout>
+        <StackLayout >
+            <SearchBar Placeholder="ابحث عن السور "
+                       Background="white" Margin="50,10,55,0" />
+        </StackLayout>
+
+        <ListView x:Name="Islamlistes" Margin="0,10,55,10" SelectionMode="Single" ItemSelected="Islamlistes_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding name}" FontSize="20" TextColor="White" 
+                                             FontFamily="{StaticResource CairoS}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
+

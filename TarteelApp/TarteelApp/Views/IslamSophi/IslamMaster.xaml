@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms"
+             x:Class="TarteelApp.Views.IslamSophi.IslamMaster"
+             BackgroundImageSource="backg.png"
+             Shell.NavBarHasShadow="False" 
+             Shell.NavBarIsVisible="False"
+             >
+    <Grid>
+        
+            <StackLayout HorizontalOptions="Center" Margin="0,40,0,0" Grid.Row="0" >
+                <Label Text="{Binding name}" TextColor="Black" FontSize="25" FontFamily="{StaticResource CairoA}" Margin="0,0,20,0" />
+                <Image Source="Line.png"/>
+            </StackLayout>
+            <StackLayout Margin="30,40,30,0"  HeightRequest="1000" Grid.Row="2" >
+                <shared:MediaPlayerElement x:Name="myVideo" />
+            </StackLayout>
+            <StackLayout Grid.Row="1" Margin="60,0,60,0">
+            <Frame >
+                <ScrollView>
+                    <Label Text="{Binding text}" TextColor="Black" FontSize="20" />
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

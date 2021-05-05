@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="TarteelApp.Views.HomePage"
+            BackgroundImageSource="backg.png"
+             Shell.NavBarHasShadow="False" 
+             Title="ترتيل"
+             Shell.NavBarIsVisible="False"
+                  
+             >
+    <StackLayout>
+        <StackLayout HorizontalOptions="Center" Margin="0,40,0,0" >
+            <Label Text="القارئ" TextColor="Black" FontSize="25" FontFamily="{StaticResource CairoA}" Margin="0,0,40,0" />
+            <Image Source="Line.png"/>
+        </StackLayout>
+        <StackLayout >
+            <SearchBar Placeholder="ابحث عن قارئك المفضل"
+                       Background="white" Margin="50,10,50,0" />
+        </StackLayout>
+
+        <ScrollView Margin="15" VerticalScrollBarVisibility="Never" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="220" />
+                    <RowDefinition Height="220" />
+                    <RowDefinition Height="220" />
+                </Grid.RowDefinitions>
+                <Frame BackgroundColor="#0000" Grid.Column="0" Grid.Row="0" CornerRadius="15" >
+                    <StackLayout>
+                        <ImageButton 
+                            CornerRadius="10" x:Name="Islamsophie" Clicked="Islamsophie_Clicked"
+                            Source="https://i1.sndcdn.com/artworks-000175917473-h7k9mi-t500x500.jpg" />
+                        <Label Text="برنامج فكر" TextColor="White"  FontFamily="{StaticResource CairoS}" />
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#0000" Grid.Column="1" Grid.Row="0" CornerRadius="15" >
+                    <StackLayout>
+                        <ImageButton 
+                         CornerRadius="10"
+                            Source="https://i1.sndcdn.com/artworks-000175917473-h7k9mi-t500x500.jpg" />
+                        <Label Text="برنامج فكر" TextColor="White"  FontFamily="{StaticResource CairoS}" />
+                    </StackLayout>
+                </Frame>
+                
+
+            </Grid>
+
+        </ScrollView>
+        
+    </StackLayout>
+</ContentPage>
