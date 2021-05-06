@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,10 @@ namespace TarteelApp.Views
 
         private void Islamsophie_Clicked(object sender, EventArgs e)
         {
+            UserDialogs.Instance.ShowLoading("انتظر");
             App.Current.MainPage.Navigation.PushAsync(new IslamList());
+           UserDialogs.Instance.HideLoading();
+        
         }
     }
 }

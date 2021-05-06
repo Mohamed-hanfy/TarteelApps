@@ -12,11 +12,12 @@
             <Image Source="Line.png"/>
         </StackLayout>
         <StackLayout >
-            <SearchBar Placeholder="ابحث عن السور "
+            <SearchBar x:Name="Serchquri" Placeholder="ابحث عن السور "
                        Background="white" Margin="50,10,55,0" />
         </StackLayout>
 
-        <ListView x:Name="Islamlistes" Margin="0,10,55,10" SelectionMode="Single" ItemSelected="Islamlistes_ItemSelected">
+        <ListView x:Name="Islamlistes" Margin="0,10,55,10" SelectionMode="Single"
+                  ItemSelected="Islamlistes_ItemSelected" IsPullToRefreshEnabled="False"  >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

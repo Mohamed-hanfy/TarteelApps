@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1034140794954",
+    "firebase_url": "https://tarteel-9fb79-default-rtdb.firebaseio.com",
+    "project_id": "tarteel-9fb79",
+    "storage_bucket": "tarteel-9fb79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034140794954:android:f71f07b914f13971ba66b3",
+        "android_client_info": {
+          "package_name": "com.tarteel.tarteelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034140794954-j2mi8b4lb099403bq7kljv2ua3h156m9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDso3ENKcXmCth24tFDHgjFKfuXW-sJF1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034140794954-j2mi8b4lb099403bq7kljv2ua3h156m9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

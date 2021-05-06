@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,8 +29,12 @@ namespace TarteelApp.Views.IslamSophi
 
         private void Islamlistes_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            UserDialogs.Instance.ShowLoading("انتظر");
             var item = e.SelectedItem as Itemes;
             App.Current.MainPage.Navigation.PushModalAsync(new IslamMaster(item));
+           UserDialogs.Instance.HideLoading();
+
         }
     }
-}
+        }
+    

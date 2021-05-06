@@ -6,6 +6,7 @@ using Android.Runtime;
 
 using Android.OS;
 using LibVLCSharp.Forms.Shared;
+using Acr.UserDialogs;
 
 namespace TarteelApp.Droid
 {
@@ -16,6 +17,7 @@ namespace TarteelApp.Droid
         {
             base.OnCreate(savedInstanceState);
             LibVLCSharpFormsRenderer.Init();
+            UserDialogs.Init(this);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

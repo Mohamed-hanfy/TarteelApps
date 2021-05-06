@@ -7,21 +7,35 @@
              Shell.NavBarHasShadow="False" 
              Shell.NavBarIsVisible="False"
              >
-    <Grid>
-        
-            <StackLayout HorizontalOptions="Center" Margin="0,40,0,0" Grid.Row="0" >
+
+    <StackLayout>
+      
+<Grid>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+            <StackLayout HorizontalOptions="Center" Margin="0,40,0,0"  >
                 <Label Text="{Binding name}" TextColor="Black" FontSize="25" FontFamily="{StaticResource CairoA}" Margin="0,0,20,0" />
                 <Image Source="Line.png"/>
             </StackLayout>
-            <StackLayout Margin="30,40,30,0"  HeightRequest="1000" Grid.Row="2" >
+
+            <StackLayout Margin="60,0,60,0" Grid.Row="1">
+                <Frame CornerRadius="25">
+                    <ScrollView>
+                        <Label Text="{Binding text}" TextColor="Black" FontSize="20" />
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Margin="30,40,30,0"  HeightRequest="1000"  Grid.Row="2">
                 <shared:MediaPlayerElement x:Name="myVideo" />
             </StackLayout>
-            <StackLayout Grid.Row="1" Margin="60,0,60,0">
-            <Frame >
-                <ScrollView>
-                    <Label Text="{Binding text}" TextColor="Black" FontSize="20" />
-                </ScrollView>
-            </Frame>
-        </StackLayout>
-    </Grid>
+
+        </Grid>
+       
+    </StackLayout>
 </ContentPage>
