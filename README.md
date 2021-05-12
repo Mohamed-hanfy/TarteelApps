@@ -5,9 +5,9 @@ The application is characterized by strong performance, speed, and stability.
 And also the disappearance of errors from it
 It has also been built by .Net so it is protected from hacking
 I used the following libraries
-Xamarin forms
-Xamarin Essential
-Xamarin community tools
-VLC media player
-Firebase database
-Firebase analyzes
+*Xamarin forms
+*Xamarin Essential
+*Xamarin community tools
+*VLC media player
+*Firebase database
+*Firebase analyzes
